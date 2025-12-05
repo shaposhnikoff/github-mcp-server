@@ -91,10 +91,10 @@ go build -v ./cmd/github-mcp-server
 {
   "servers": {
     "github": {
-      "command": "/полный/путь/к/github-mcp-server",
+      "command": "/path/to/github-mcp-server",
       "args": ["stdio"],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "ваш_токен"
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
       }
     }
   }
